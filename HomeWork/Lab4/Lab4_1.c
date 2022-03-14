@@ -1,10 +1,19 @@
-#include <stdio.h>
+/*
+  De chay rieng chuong trinh nay thi hay xoa comment 
+tai ham int main().
 
+    LUU Y: Chay chuong trinh xong thi sua lai nhu cu de
+Lab4_4.c co the chay binh thuong
+                    
+                    Xin cam on!
+*/
+#include <stdio.h>
+/*
 int main(){
     trungbinhcong();
     return 0;
 }
-
+*/
 void trungbinhcong(){
 
     int min,max,tong = 0,biendem = 0;
@@ -21,6 +30,6 @@ void trungbinhcong(){
         }
     }
     trungbinh = tong/biendem;
-    printf("Trung binh cong chia het cho 2 la: %.2f",trungbinh);
+    printf("Trung binh cong chia het cho 2 la: %.2f\n",trungbinh);
 
 }
