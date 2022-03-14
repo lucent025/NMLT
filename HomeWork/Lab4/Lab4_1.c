@@ -7,17 +7,17 @@ int main(){
 
 void trungbinhcong(){
 
-    int min,max,tong = 0,biendem = 0, i = min;
+    int min,max,tong = 0,biendem = 0;
     float trungbinh;
     printf("Nhap vao min: ");
     scanf("%d",&min);
     printf("Nhap vao max: ");
     scanf("%d",&max);
-    while (i <= max){
+    int i = min;
+    for ( i; i <= max; i++){
         if (i % 2 == 0){
             tong += i;
             biendem++;
-            i++;
         }
     }
     trungbinh = tong/biendem;
