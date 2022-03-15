@@ -1,6 +1,7 @@
 #include "Lab4_1.c"
 #include "Lab4_2.c"
 #include "Lab4_3.c"
+#include <stdlib.h>
 
 int main(){
     opt();
