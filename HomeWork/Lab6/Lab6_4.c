@@ -17,6 +17,9 @@ int arr2d(){
         }
     }
     for (int o = 0; o < hang; o++){
-        printf("a[%d] = %d",o+1,mang[o]);
+        for (int m = 0; m < cot; m++){
+            printf("%5d",mang[o][m]);
+        }
+        printf("\n");
     }
 }
