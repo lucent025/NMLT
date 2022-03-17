@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+void songuyento();
 int main(){
     songuyento();
     return 0;
