@@ -2,10 +2,7 @@
 
 void tiendien();
 
-int main(){
-    tiendien();
-    return 0;
-}
+
 
 void tiendien(){
 
@@ -32,3 +29,4 @@ void tiendien(){
         tien = dientieuthu*2927;
         printf("Tien dien tieu thu: %d VND\n",tien);
     }
+}
