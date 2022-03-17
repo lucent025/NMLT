@@ -12,8 +12,8 @@ void songuyento(){
         }
     }
     if (biendem == 0){
-        printf("\n%d la so nguyen to!",n);
+        printf("\n%d la so nguyen to!\n",n);
     } else  {
         printf("\n%d khong phai la so nguyen to!\n",n);
-    } 
+    }
 }

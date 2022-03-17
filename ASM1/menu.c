@@ -15,8 +15,8 @@ void opt(){
  
     printf("+---------------------------------+\n");
     printf("|                                 |\n");
-    printf("|   1. Kiểm tra số nguyên tố.     |\n");
-    printf("|   2. Tính tiền điện.            |\n");
+    printf("|   1. Kiem tra so nguyen to.     |\n");
+    printf("|   2. Tinh tien đien.            |\n");
     printf("|   3. Giai phuong trinh bac 2.   |\n");
     printf("|   4. Tinh tien dien tieu thu.   |\n");
     printf("|   5. Ket thuc chuong trinh      |\n");
