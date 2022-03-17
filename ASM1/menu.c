@@ -1,5 +1,10 @@
 #include "songuyento.c"
+#include "tiendien.c"
 #include <stdlib.h>
+
+void opt();
+void ExitOrConntinue();
+void wrongtype();
 
 int main(){
     opt();
@@ -10,8 +15,8 @@ void opt(){
  
     printf("+---------------------------------+\n");
     printf("|                                 |\n");
-    printf("|   1. Xem hoc luc sinh vien.     |\n");
-    printf("|   2. Giai phuong trinh bac 1.   |\n");
+    printf("|   1. Kiểm tra số nguyên tố.     |\n");
+    printf("|   2. Tính tiền điện.            |\n");
     printf("|   3. Giai phuong trinh bac 2.   |\n");
     printf("|   4. Tinh tien dien tieu thu.   |\n");
     printf("|   5. Ket thuc chuong trinh      |\n");
@@ -24,6 +29,10 @@ void opt(){
     switch (luachon){
         case 1:
             songuyento();
+            ExitOrConntinue();
+            break;
+        case 2:
+            tiendien();
             ExitOrConntinue();
             break;
         default:
@@ -57,7 +66,7 @@ void ExitOrConntinue(){
 
     }
 }
-int wrongtype(){
+void wrongtype(){
     printf("###################################\n");
     printf("#                                 #\n");
     printf("#    Nhap sai, xin hay nhap lai   #\n");
