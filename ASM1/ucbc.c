@@ -2,15 +2,13 @@
 
 void ucbc();
 int uc();
+int bc();
 
-int main(){
-    ucbc();
-    return 0;
-}
+
 
 void ucbc(){
     int a,b;
-    printf("Nhap vao so a: "); scanf("%d",&a);
+    printf("\nNhap vao so a: "); scanf("%d",&a);
     printf("Nhap vao so b: "); scanf("%d",&b);
     int c = uc(a,b);
     int d = bc(a,b);

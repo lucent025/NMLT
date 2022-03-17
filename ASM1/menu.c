@@ -1,5 +1,6 @@
 #include "songuyento.c"
 #include "tiendien.c"
+#include "ucbc.c"
 #include <stdlib.h>
 
 void opt();
@@ -12,12 +13,12 @@ int main(){
 }
 
 void opt(){
- 
+    printf("\n");
     printf("+---------------------------------+\n");
     printf("|                                 |\n");
     printf("|   1. Kiem tra so nguyen to.     |\n");
-    printf("|   2. Tinh tien đien.            |\n");
-    printf("|   3. Giai phuong trinh bac 2.   |\n");
+    printf("|   2. Tinh tien dien tieu thu.   |\n");
+    printf("|   3. UCLN, BCNN.                |\n");
     printf("|   4. Tinh tien dien tieu thu.   |\n");
     printf("|   5. Ket thuc chuong trinh      |\n");
     printf("|                                 |\n");
@@ -35,6 +36,10 @@ void opt(){
             tiendien();
             ExitOrConntinue();
             break;
+        case 3:
+            ucbc();
+            ExitOrConntinue();
+            break;
         default:
             wrongtype();
             opt();
@@ -43,6 +48,7 @@ void opt(){
     
 }
 void ExitOrConntinue(){
+    printf("\n");
     printf("+-----------------------------------+\n");
     printf("|                                   |\n");
     printf("|      Ban co muon tiep tuc?        |\n");
@@ -67,6 +73,7 @@ void ExitOrConntinue(){
     }
 }
 void wrongtype(){
+    printf("\n");
     printf("###################################\n");
     printf("#                                 #\n");
     printf("#    Nhap sai, xin hay nhap lai   #\n");
