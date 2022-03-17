@@ -4,6 +4,10 @@
 #include "Lab3_3.c"
 #include <stdlib.h>
 
+void opt();
+void ExitOrConntinue();
+void wrongtype();
+
 int main(){
     opt();
     return 0;
@@ -74,7 +78,7 @@ void ExitOrConntinue(){
 
     }
 }
-int wrongtype(){
+void wrongtype(){
     printf("###################################\n");
     printf("#                                 #\n");
     printf("#    Nhap sai, xin hay nhap lai   #\n");
