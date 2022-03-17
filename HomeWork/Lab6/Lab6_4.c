@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main(){
     arr2d();
     return 0;
@@ -18,7 +19,7 @@ int arr2d(){
     }
     for (int o = 0; o < hang; o++){
         for (int m = 0; m < cot; m++){
-            printf("%5d",mang[o][m]);
+            printf("%5d",mang[o][m]*mang[o][m]);
         }
         printf("\n");
     }
