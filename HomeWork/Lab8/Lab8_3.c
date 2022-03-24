@@ -42,15 +42,15 @@ int dssv(){
         }
     }
     char custommssv[50];
-    printf("Nhap vao ma so sinh vien: "); scanf("%s",&custommssv); 
+    printf("Nhap vao ma so sinh vien: "); fgets(custommssv, sizeof(custommssv),stdin);
     for (j = 0; j < n; j++){
-        if (strcmp(custommssv, mangSv[j].mssv) == 0){
+        if (strcmp(mangSv[j].mssv, custommssv) == 0){
             printf("====================================================\n");
             printf("MSSV: %s\n",mangSv[j].mssv);
             printf("Ho va Ten: %s\n",mangSv[j].tensv);
             printf("Nganh Hoc: %s\n",mangSv[j].nganhhoc);
             printf("Diem Trung Binh: %.2f\n",mangSv[j].diemtrungbinh);
             printf("====================================================\n");
-        }
+        } 
     }
 }
