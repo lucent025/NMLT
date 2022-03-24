@@ -4,8 +4,6 @@
 struct sinhVien;
 
 int dssv();
-void swap();
-
 
 int main(){
     dssv();
