@@ -8,7 +8,7 @@ int main(){
 }
 
 void dempnam(){
-    char string[6];
+    char string[100];
     printf("Xin moi nhap vao chuoi: "); gets(string);
     int i = 0, p = 0, n = 0;
 
