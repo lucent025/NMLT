@@ -10,10 +10,7 @@ void ExitOrConntinue();
 void wrongtype();
 void opt();
 
-int main(){
-    opt();
-    return 0;
-}
+
 
 void opt(){
     printf("\n");
@@ -95,4 +92,8 @@ void wrongtype(){
     printf("#    Nhap sai, xin hay nhap lai   #\n");
     printf("#                                 #\n");
     printf("###################################\n");
+}
+int main(){
+    opt();
+    return 0;
 }
