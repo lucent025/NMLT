@@ -11,13 +11,19 @@ void laisuatvay(){
 }
 
 int tinhlai(){
-    int goc,i = 0,lai[] = {0,0,0,0,0,0,0,0,0,0,0,0}
-                 ,conlai[] = {0,0,0,0,0,0,0,0,0,0,0,0};
-    int phaitra[] = {0,0,0,0,0,0,0,0,0,0,0,0};
-    goc = sotien/12;
-    
-    printf("|   Ky Han   |    Lai Phai Tra    |    Goc Phai Tra    |    So tien Phai Tra    |    So tien Con lai    |\n");
-    for(int j = 0; j < 12; j++){
-    printf("|     %d               %d                   %d                     %d                       %d           \n",j+1,lai[j],goc,phaitra[j],conlai[j]);
+    int i,*lai[]     = {0,0,0,0,0,0,0,0,0,0,0,0}
+         ,*conlai[]  = {0,0,0,0,0,0,0,0,0,0,0,0}
+         ,*phaitra[] = {0,0,0,0,0,0,0,0,0,0,0,0};
+    int goc = sotien/12;
+    for(i = 0; i < 12;i++){
+        lai[i] = (int)(sotien*0.05);
+        sotien = sotien - goc;
+        *conlai[i] = sotien;
+        phaitra[i] = lai[i]+goc;
     }
-}
+    printf("%d\n",phaitra[i]);
+    printf("|   Ky Han   |    Lai Phai Tra    |     Goc Phai Tra     |     So tien Phai Tra     |     So tien Con lai     |\n");
+    for(int j = 0; j < 12; j++){
+    setlocale(LC_NUMERIC, "");
+        printf("     %'d              %'d              %'d               %'d                  %'d           \n",j+1,lai[j],goc,phaitra[j],conlai[j]);
+    }
