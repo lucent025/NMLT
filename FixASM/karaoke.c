@@ -22,6 +22,8 @@ int tinhtien() {
     int thanhtien, tienmoigio = 50000;
     if(ketthuc - batdau == 3) {
         thanhtien = 150000;
+    } else if(ketthuc - batdau < 3){
+        thanhtien = (ketthuc - batdau)*50000;
     } else if(ketthuc - batdau > 3) {
         thanhtien = 150000 + ((tienmoigio - tienmoigio*0.3)*((ketthuc - batdau)-3));
     }
