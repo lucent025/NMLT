@@ -6,7 +6,7 @@
 void opt();
 void ExitOrConntinue();
 void wrongtype();
-
+//
 int main(){
     opt();
     return 0;
